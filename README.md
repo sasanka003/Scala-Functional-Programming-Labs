@@ -1,1 +1,1 @@
-# Scala-Functional-Programming-Labs-
+# Scala-Functional-Programming-Labs
