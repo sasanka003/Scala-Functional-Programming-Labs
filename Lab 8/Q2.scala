@@ -1,8 +1,7 @@
 import scala.io.StdIn
 
 object NumberClassification {
-  def classifyingNumbers(number: Int): String = number match
-  {
+  val classifyingNumbers: Int => String = {
     case number if number == 0 => "Zero"
     case number if number < 0 => "Negative"
     case number if number > 0 && number % 2 == 0 => "an Even Number"
@@ -10,7 +9,7 @@ object NumberClassification {
   }
 
   def main(args: Array[String]): Unit = {
-    print("Enter a number : ")
+    print("Enter a number: ")
     val number = scala.io.StdIn.readInt()
     print(f"$number is ${classifyingNumbers(number)}.")
   }

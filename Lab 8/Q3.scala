@@ -28,6 +28,7 @@ object StringFormatter {
 
   def formatNames(name: String, formatter: String => String): String = formatter(name)
 
+
   def main(args: Array[String]): Unit = {
     val names = List("Benny", "Niroshan", "Saman", "Kumara")
 
